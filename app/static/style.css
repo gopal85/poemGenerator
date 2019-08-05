@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Abel&display=swap');
+
+
+.request {
+    /*background-color: cyan;*/
+}
+
+.poem {
+    /*background-color: dodgerblue;*/
+}
+
+body {
+    background-color: #ffebee;
+    
+}
+
+label {
+    font-size: 40px;
+}
+
+.container {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+.card-content {
+    text-align: center;
+    font-family: Abel, sans-serif;
+    font-size: 40px;
+     text-decoration: italics;
+}
+
+.intro {
+    text-align: center;
+    font-family: Abel, sans-serif;
+}

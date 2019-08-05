@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Poem Generator</title>
+        <link rel="stylesheet" href="static/style.css" type="text/css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    </head>
+    <body>
+        <div class="intro">
+            <h1>Poem Generator</h1>
+            <h2>Enter a word. Receive a splendiferous, 2-line, 4-word rhyming poem.</h2>    
+        </div>
+        <div class="container">
+            <div class="request">
+                <div class="card pink darken-4">
+                    <div class="card-content white-text">
+                        <form method = "post" action = "/poem">
+                            <h3>Enter a word:</h3>
+                            <!--<label for = "input_word">Enter a word:</label>-->
+                            <input type="text" name="input_word"/>
+                            <input type="submit" value="Submit"/>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="poem">
+                <div class="card pink accent-4">
+                    <div class="card-content white-text">
+                        {% if line1 and line2 %}
+                        {{ line1 }}
+                        <br>
+                        {{ line2 }}
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
